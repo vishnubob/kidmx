@@ -23,12 +23,8 @@
 #define KTYPE_SET               0x0103
 #define KSET_ACKS               1
 
-#define KTYPE_KDM_SER9OUT 0xfb02
-#define KTYPE_KDM_TICKER 0xfb03
-#define KTYPE_KDM_DMXSTROBE 0xfb04
-
-#define KINET_HEADER_SIZE 21
-#define BUFFER_SIZE 1000
+#define KINET_HEADER_SIZE       21
+#define BUFFER_SIZE             1000
 
 class KinetSocket 
 {

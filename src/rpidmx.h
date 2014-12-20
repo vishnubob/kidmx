@@ -14,10 +14,10 @@ based on code by
 #include <pigpio.h>
 
 // Timings
-#define BREAK_US		    120
-#define MAB_US			    12
-#define	POSTPACKET_IDLE_US	50
-#define BIT_US			    4
+#define BREAK_US            120
+#define MAB_US              12
+#define POSTPACKET_IDLE_US  50
+#define BIT_US              4
 
 // Pulse types
 #define PULSE_LOW           0
@@ -29,8 +29,8 @@ based on code by
 
 // 1 start pulse + 8 bits + 1 stop pulse
 #define DMX_BYTE_LEN        10 
-// 2 pulses (BREAK, MAB) + DMX_BYTE_LEN
-#define DMX_PULSE_OFFSET    3 + DMX_BYTE_LEN 
+// 2 pulses (BREAK, MAB) + START CODE + start bit
+#define DMX_PULSE_OFFSET    2 + DMX_BYTE_LEN + 1
 
 typedef std::vector<uint8_t> pin_vec_t;
 typedef std::vector<uint8_t> channel_vec_t;
